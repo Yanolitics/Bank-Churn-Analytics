@@ -18,15 +18,15 @@ IF OBJECT_ID('bronze.crm_profiles', 'U') IS NOT NULL
 GO
 
 CREATE TABLE bronze.crm_profiles (
-    CLIENTNUM INT,
-    Customer_Age INT,
-    Gender NVARCHAR(10),
-    Dependent_count INT,
-    Education_Level NVARCHAR (20),
-    Marital_Status NVARCHAR (20),
-    Contacts_Count_12_mon INT,
- );
-GO   
+    CLIENTNUM INT NULL,
+    Customer_Age FLOAT NULL, -- Changed to FLOAT to safely accept pandas decimal formats (e.g., 45.0)
+    Gender NVARCHAR(10) NULL,
+    Dependent_count INT NULL,
+    Education_Level NVARCHAR(20) NULL,
+    Marital_Status NVARCHAR(20) NULL,
+    Contacts_Count_12_mon INT NULL -- Removed the trailing comma here
+);
+GO 
     
 -- 2. Core Banking System
 IF OBJECT_ID('bronze.credit_accounts_ops', 'U') IS NOT NULL
@@ -50,15 +50,15 @@ IF OBJECT_ID('bronze.ledger_transactions', 'U') IS NOT NULL
 GO
 
 CREATE TABLE bronze.ledger_transactions (
-    CLIENTNUM INT,
-    Credit_Limit FLOAT,
-    Total_Revolving_Bal INT,
-    Avg_Open_To_Buy FLOAT,
-    Total_Trans_Amt INT,
-    Total_Trans_Ct INT,
-    Avg_Utilization_Ratio FLOAT,
-    Total_Amt_Chng_Q4_Q1 FLOAT,
-    Total_Ct_Chng_Q4_Q1 FLOAT
+    CLIENTNUM INT NULL,
+    Credit_Limit NVARCHAR (50) NULL,
+    Total_Revolving_Bal INT NULL,
+    Avg_Open_To_Buy FLOAT NULL,
+    Total_Trans_Amt INT NULL,
+    Total_Trans_Ct INT NULL,
+    Avg_Utilization_Ratio FLOAT NULL,
+    Total_Amt_Chng_Q4_Q1 FLOAT NULL,
+    Total_Ct_Chng_Q4_Q1 FLOAT NULL
  );
 GO
 
