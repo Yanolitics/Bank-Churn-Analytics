@@ -56,6 +56,8 @@ The project follows a rigorous, decoupled data workflow to ensure data integrity
 <!-- Image Placeholder for the Final Dashboard Visual Layout -->
 ![Bank Churn Analytics Executive Dashboard](images/bca_dashboard_layout.png)
 
+---
+
 ##📊 Strategic Business Insights Uncovered
 Through deep data exploration, this project uncovered critical diagnostic behavior patterns that can be translated directly into corporate defensive actions:
 
@@ -65,11 +67,15 @@ Through deep data exploration, this project uncovered critical diagnostic behavi
 * **The Month 4 Retention Cliff:** Account dormancy features a massive retention drop-off peaking exactly at 4 months of inactivity (~29% churn). Marketing re-engagement campaigns must intervene during Month 2 or 3 to effectively disrupt this drop-off.
 * **Support Friction Caps:** Customer helpdesk lines are acting as churn accelerators. While the bank safely handles up to 2 calls, hitting 4 support contacts spikes churn to nearly 38%, and reaching 6 contacts represents a near-certain 90% cancellation rate.
 
+---
+
 ##⚡ Tech Stack & Core Concepts Demonstrated
 * **Query Engine:** Microsoft SQL Server (T-SQL)
 * **Analytics & BI Platform:** Power BI Desktop
 * **Modeling Paradigms:** Star Schema, Feature Engineering, Common Table Expressions (CTEs), Filter Context, DAX Measure Engineering.
 * **Core Business Domains:** Retail Banking, Portfolio Risk Management, Customer Churn Mitigation, Operational Performance Optimization.
+
+---
 
 ##👨‍💻 About the Developer
 I’m Timothy, a certified data analyst with a deep background in managing rigid data structures and corporate compliance within the financial sector. I pivoted into data analytics because I am passionate about engineering reliable data solutions, unraveling complex business problems, and delivering clear, actionable metrics to stakeholders.
