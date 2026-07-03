@@ -24,12 +24,10 @@ The project follows a rigorous, decoupled data workflow to ensure data integrity
 <!-- Image Placeholder for SQL Server Schema / Object Explorer -->
 ![Database Schema Ingestion Layout](images/sql_database_setup.png)
 
-2. Advanced Data Transformation & Feature Engineering
-Purpose: Converting raw transactional records into clean business performance indicators. Advanced T-SQL scripting was leveraged to build optimized analytical views.
-
-Core SQL Techniques Applied:
-
-Common Table Expressions (CTEs): Used to isolate, aggregate, and contrast historical quarterly transaction metrics.
+### 2. Advanced Data Transformation & Feature Engineering
+* **Purpose:** Converting raw transactional records into clean business performance indicators. Advanced T-SQL scripting was leveraged to build optimized analytical views.
+* **Core SQL Techniques Applied:**
+*Common Table Expressions (CTEs): Used to isolate, aggregate, and contrast historical quarterly transaction metrics.
 
 Defensive Calculation Logic: Implemented math boundaries to protect calculations against dividing-by-zero errors.
 
