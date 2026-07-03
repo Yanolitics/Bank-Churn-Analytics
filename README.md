@@ -20,11 +20,7 @@ The project follows a rigorous, decoupled data workflow to ensure data integrity
 * **Database Engine:** Microsoft SQL Server (T-SQL).
 * **Ingestion Strategy:** Safe batch loading of raw source files into physical staging tables, ensuring exact data type casting and structure optimization.
 
---```markdown
-<!-- Image Placeholder for SQL Server Schema / Object Explorer -->
-![Database Schema Ingestion Layout](images/sql_database_setup.png)
-<img width="16384" height="3166" alt="BankChurnAnalytics drawio" src="https://github.com/user-attachments/assets/26c98f22-3fde-4e57-8afb-268b451c0a09" />
-
+<img width="359" height="362" alt="1" src="https://github.com/user-attachments/assets/c8a05b40-08da-4447-8265-8d44e1dd1426" />
 
 ### 2. Advanced Data Transformation & Feature Engineering
 * **Purpose:** Converting raw transactional records into clean business performance indicators. Advanced T-SQL scripting was leveraged to build optimized analytical views.
@@ -43,8 +39,8 @@ The project follows a rigorous, decoupled data workflow to ensure data integrity
     *   **Advanced DAX Metrics:** Engineered explicit measures to calculate real-time portfolio counts, churned customer volumes, and dynamic percentage margins.
     *   **Filter Context Customization:** Tailored visual cross-filtering and cross-highlighting interaction parameters to ensure clean data exploration.
 
-<!-- Image Placeholder for Power BI Relationship Model View -->
-![Power BI Star Schema Data Model](images/powerbi_data_model.png)
+<img width="831" height="644" alt="Data Model" src="https://github.com/user-attachments/assets/b5c6f950-ff32-49d4-b40a-b9e3cbdad293" />
+
 
 ### 4. Consume Layer: Interactive Executive Dashboard
 * **Purpose:** Serving visual intelligence to executives, operational leads, and cross-functional teams to drive customer preservation strategies.
@@ -55,8 +51,8 @@ The project follows a rigorous, decoupled data workflow to ensure data integrity
     *   **Inactivity Danger Zone Analysis:** Pinpoints the exact month customer dormancy transitions into permanent attrition.
     *   **Customer Friction Meter:** Directly measures the quantitative relationship between repeated helpdesk tickets and portfolio leakage.
  
-<!-- Image Placeholder for the Final Dashboard Visual Layout -->
-![Bank Churn Analytics Executive Dashboard](images/bca_dashboard_layout.png)
+<img width="1322" height="760" alt="BCA Dashboard" src="https://github.com/user-attachments/assets/2cca03f5-38b4-4377-8f65-71f18f924e40" />
+
 
 ---
 
