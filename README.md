@@ -42,14 +42,13 @@ The project follows a rigorous, decoupled data workflow to ensure data integrity
 <img width="831" height="644" alt="Data Model" src="https://github.com/user-attachments/assets/b5c6f950-ff32-49d4-b40a-b9e3cbdad293" />
 
 
-### 4. Consume Layer: Interactive Executive Dashboard
-* **Purpose:** Serving visual intelligence to executives, operational leads, and cross-functional teams to drive customer preservation strategies.
-* **Visual Interface Modules:**
-    *   **Executive KPI Scoreboard:** High-level summary displaying overall portfolio scale and the baseline churn metric.
-    *   **Financial Velocity Table:** Tracks behavioral drop-offs across historical spending patterns and card usage frequencies.
-    *   **Product Category Risk Profile:** Isolates structural vulnerability across the bank's card tiers (Blue, Silver, Gold, Platinum).
-    *   **Inactivity Danger Zone Analysis:** Pinpoints the exact month customer dormancy transitions into permanent attrition.
-    *   **Customer Friction Meter:** Directly measures the quantitative relationship between repeated helpdesk tickets and portfolio leakage.
+### 4. Data Warehouse: Gold Layer (Business-Ready Presentation Area)
+* **Purpose:** The visualization-ready presentation layer optimized for seamless Star Schema ingestion into Power BI.
+* **Object Type:** SQL Views (Virtual transformation tables ensuring real-time computations with zero data storage redundancy).
+* **Dependency & Build Strategy:** Implemented a clean-slate teardown protocol (`DROP VIEW IF EXISTS`), systematically dropping dependent Fact structures prior to processing Parent Dimensions to prevent relational schema breakage.
+* **Core Architecture Applied:**
+  * **gold.dim_customer (Conformed Dimension):** Leveraged T-SQL `LEFT JOIN` mechanisms to cleanly stitch demographic records (`silver.crm_profiles`) alongside deep account operational parameters (`silver.credit_accounts_ops`).
+  * **gold.fact_transactions (Conformed Fact):** Isolated core financial limitations, balances, and historical velocity metrics (`Total_Amt_Chng_Q4_Q1`) into a streamlined, high-performance transactional asset.
  
 <img width="1322" height="760" alt="BCA Dashboard" src="https://github.com/user-attachments/assets/2cca03f5-38b4-4377-8f65-71f18f924e40" />
 
