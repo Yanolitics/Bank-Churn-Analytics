@@ -23,6 +23,8 @@ The project follows a rigorous, decoupled data workflow to ensure data integrity
 --```markdown
 <!-- Image Placeholder for SQL Server Schema / Object Explorer -->
 ![Database Schema Ingestion Layout](images/sql_database_setup.png)
+<img width="16384" height="3166" alt="BankChurnAnalytics drawio" src="https://github.com/user-attachments/assets/26c98f22-3fde-4e57-8afb-268b451c0a09" />
+
 
 ### 2. Advanced Data Transformation & Feature Engineering
 * **Purpose:** Converting raw transactional records into clean business performance indicators. Advanced T-SQL scripting was leveraged to build optimized analytical views.
