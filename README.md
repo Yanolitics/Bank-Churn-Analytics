@@ -30,8 +30,7 @@ The project follows a rigorous, decoupled data workflow to ensure data integrity
   * **gold.dim_customer (Conformed Dimension):** Leveraged T-SQL `LEFT JOIN` mechanisms to cleanly stitch demographic records (`silver.crm_profiles`) alongside deep account operational parameters (`silver.credit_accounts_ops`).
   * **gold.fact_transactions (Conformed Fact):** Isolated core financial limitations, balances, and historical velocity metrics (`Total_Amt_Chng_Q4_Q1`) into a streamlined, high-performance transactional asset.
  
-<!-- Image Placeholder for T-SQL Code / Stored Procedure Script -->
-![T-SQL Feature Engineering Script](images/tsql_transformation_query.png)
+ <img width="4400" height="3400" alt="Gold_Layer_Query" src="https://github.com/user-attachments/assets/b729a2b3-8f57-4fba-b606-77d5c97932f6" />
 
 ### 3. Power BI Data Modeling (The Semantic Layer)
 * **Purpose:** Establishing an optimized relational star schema inside Power BI Desktop to facilitate blazing-fast reporting and accurate data calculations.
