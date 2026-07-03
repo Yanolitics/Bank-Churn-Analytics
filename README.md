@@ -20,7 +20,7 @@ The project follows a rigorous, decoupled data workflow to ensure data integrity
 * **Database Engine:** Microsoft SQL Server (T-SQL).
 * **Ingestion Strategy:** Safe batch loading of raw source files into physical staging tables, ensuring exact data type casting and structure optimization.
 
-```markdown
+--```markdown
 <!-- Image Placeholder for SQL Server Schema / Object Explorer -->
 ![Database Schema Ingestion Layout](images/sql_database_setup.png)
 
