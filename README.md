@@ -22,7 +22,7 @@ The project follows a rigorous, decoupled data workflow to ensure data integrity
 
 <img width="359" height="362" alt="1" src="https://github.com/user-attachments/assets/c8a05b40-08da-4447-8265-8d44e1dd1426" />
 
-### 4. Data Warehouse: Gold Layer (Business-Ready Presentation Area)
+### 2. Data Warehouse: Gold Layer (Business-Ready Presentation Area)
 * **Purpose:** The visualization-ready presentation layer optimized for seamless Star Schema ingestion into Power BI.
 * **Object Type:** SQL Views (Virtual transformation tables ensuring real-time computations with zero data storage redundancy).
 * **Dependency & Build Strategy:** Implemented a clean-slate teardown protocol (`DROP VIEW IF EXISTS`), systematically dropping dependent Fact structures prior to processing Parent Dimensions to prevent relational schema breakage.
@@ -70,7 +70,7 @@ Through deep data exploration, this project uncovered critical diagnostic behavi
 
 * **Query Engine:** Microsoft SQL Server (T-SQL)
 * **Analytics & BI Platform:** Power BI Desktop
-* **Modeling Paradigms:** Star Schema, Feature Engineering, Common Table Expressions (CTEs), Filter Context, DAX Measure Engineering.
+* **Modeling Paradigms:** Star Schema Modeling, Relational View Architecture, Data Schema Dependency Management, Filter Context, DAX Measure Engineering.
 * **Core Business Domains:** Retail Banking, Portfolio Risk Management, Customer Churn Mitigation, Operational Performance Optimization.
 
 ---
