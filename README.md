@@ -58,7 +58,8 @@ The project follows a rigorous, decoupled data workflow to ensure data integrity
 
 ---
 
-##📊 Strategic Business Insights Uncovered
+## 📊 Strategic Business Insights Uncovered
+
 Through deep data exploration, this project uncovered critical diagnostic behavior patterns that can be translated directly into corporate defensive actions:
 
 🚨 The 0.59 Velocity "Tripwire": Healthy, active accounts maintain a baseline transaction count ratio near 0.74. However, historical records reveal that churned customers drop down to a 0.59 transaction velocity right before they leave. This metric serves as a predictable early-warning indicator for the customer relationship team.
@@ -69,7 +70,8 @@ Through deep data exploration, this project uncovered critical diagnostic behavi
 
 ---
 
-##⚡ Tech Stack & Core Concepts Demonstrated
+## ⚡ Tech Stack & Core Concepts Demonstrated
+
 * **Query Engine:** Microsoft SQL Server (T-SQL)
 * **Analytics & BI Platform:** Power BI Desktop
 * **Modeling Paradigms:** Star Schema, Feature Engineering, Common Table Expressions (CTEs), Filter Context, DAX Measure Engineering.
@@ -77,7 +79,8 @@ Through deep data exploration, this project uncovered critical diagnostic behavi
 
 ---
 
-##👨‍💻 About the Developer
+## 👨‍💻 About the Developer
+
 I’m Timothy, a certified data analyst with a deep background in managing rigid data structures and corporate compliance within the financial sector. I pivoted into data analytics because I am passionate about engineering reliable data solutions, unraveling complex business problems, and delivering clear, actionable metrics to stakeholders.
 
 I thrive on building optimized models, writing clean documentation, and creating intuitive visual architectures that help business leaders make rapid, data-backed operational decisions.
