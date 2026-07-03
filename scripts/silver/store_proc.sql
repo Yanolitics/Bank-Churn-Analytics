@@ -32,9 +32,16 @@ FROM (
 SELECT *, ROW_NUMBER() OVER(PARTITION BY CLIENTNUM ORDER BY CLIENTNUM) AS CN FROM bronze.credit_accounts_ops) t
 WHERE CN = 1
 
-SELECT 
-    CLIENTNUM,
-    Credit_Limit,
+SELECT
+	CLIENTNUM,
+	TRY_CAST(
+        CASE 
+            WHEN Credit_Limit LIKE 'ERR_VAL' THEN NULL
+            WHEN Credit_Limit LIKE '$%' AND Credit_Limit LIKE '%,%' THEN REPLACE(REPLACE(Credit_Limit, '$', ''),',','')
+            WHEN Credit_Limit LIKE '$%' THEN REPLACE(Credit_Limit, '$', '')
+            ELSE Credit_Limit
+        END 
+    AS FLOAT) AS Credit_Limit,
     Total_Revolving_Bal,
     Avg_Open_To_Buy,
     Total_Trans_Amt,
@@ -42,4 +49,4 @@ SELECT
     Avg_Utilization_Ratio,
     Total_Amt_Chng_Q4_Q1,
     Total_Ct_Chng_Q4_Q1
-FROM bronze.ledger_transactions;
+ FROM bronze.ledger_transactions;
