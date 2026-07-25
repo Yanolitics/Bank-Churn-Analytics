@@ -2,7 +2,7 @@
 
 Welcome to my customer analytics repository! This project presents an end-to-end data pipeline and business intelligence solution designed to analyze, model, and visualize customer attrition within the retail banking sector. 
 
-Operating under the moniker **Yanolitics**, I developed this project to demonstrate how raw transactional and operational customer data can be transformed into high-impact, diagnostic business assets using **SQL Server (T-SQL)** and **Power BI**.
+Operating under the name **Yanolitics**, I developed this project to demonstrate how raw transactional and operational customer data can be transformed into high-impact, diagnostic business assets using **SQL Server (T-SQL)** and **Power BI**.
 
 ---
 
